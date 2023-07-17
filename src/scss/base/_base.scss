@@ -1,5 +1,5 @@
 @use "../abstracts/" as *;
 
-body {
-  color: $clr-blue-dark;
+.padding {
+  padding-inline: $padding-inline-main;
 }

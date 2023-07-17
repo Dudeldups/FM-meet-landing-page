@@ -1,1 +1,7 @@
 @use "../../scss/abstracts" as *;
+
+.header {
+  display: grid;
+  justify-content: center;
+  padding: get-clamp(3rem, 5rem, 48rem, 56.25rem);
+}

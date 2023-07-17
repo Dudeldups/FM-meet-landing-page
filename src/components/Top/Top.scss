@@ -1,0 +1,20 @@
+@use "../../scss/abstracts" as *;
+
+.top {
+  display: grid;
+  justify-items: center;
+
+  &__title {
+    max-width: 10ch;
+    margin-top: get-clamp(3.5rem, 4.5rem, 23.4375rem, 48rem);
+  }
+
+  &__desc {
+    max-width: 40ch;
+    margin-block: 1.5rem 1.5rem;
+  }
+
+  &__button-container {
+    padding-inline: 1.8rem;
+  }
+}
