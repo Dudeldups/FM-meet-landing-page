@@ -3,5 +3,6 @@
 .header {
   display: grid;
   justify-content: center;
-  padding: get-clamp(3rem, 5rem, 48rem, 56.25rem);
+  padding-top: get-clamp(3.25rem, 5rem, 48rem, 56.25rem);
+  margin-bottom: get-clamp(3.38rem, 4rem, 23.4375rem, 31.25rem);
 }

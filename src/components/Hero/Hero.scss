@@ -1,0 +1,17 @@
+@use "../../scss/abstracts" as *;
+
+.hero {
+  display: grid;
+  place-content: center;
+  gap: get-clamp(3rem, 4.5rem, 23.4375rem, 48rem);
+  overflow-x: hidden;
+
+  @include mq(1000px) {
+  }
+
+  &__img-mobile {
+    @include mq(1000px) {
+      display: none;
+    }
+  }
+}
