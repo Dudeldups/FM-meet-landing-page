@@ -6,10 +6,10 @@ import "./scss/main.scss";
 
 export default function App() {
   return (
-    <div className="main-container">
+    <main className="main-container">
       <Header />
       <Hero />
       <Features />
-    </div>
+    </main>
   );
 }

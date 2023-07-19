@@ -43,3 +43,40 @@ body {
     color: $clr-grey;
   }
 }
+
+.first {
+  text-align: center;
+
+  &__overline {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: $clr-blue-dark;
+  }
+
+  &__title {
+    font-size: get-clamp(2rem, 2.5rem, 23.4375rem, 48rem);
+    line-height: get-clamp(2.25rem, 2.75rem, 23.4375rem, 48rem);
+    color: $clr-dark;
+  }
+
+  &__desc {
+    font-size: get-clamp(1rem, 1.125rem, 48rem, 56.25rem);
+    color: $clr-grey;
+  }
+}
+
+.second {
+  text-align: center;
+
+  &__title {
+    font-size: get-clamp(2rem, 2.5rem, 23.4375rem, 48rem);
+    line-height: get-clamp(2.25rem, 2.75rem, 23.4375rem, 48rem);
+    color: $clr-white;
+  }
+
+  &__desc {
+    color: $clr-white;
+  }
+}

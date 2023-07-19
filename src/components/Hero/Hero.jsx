@@ -4,11 +4,11 @@ import "./Hero.scss";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <aside className="hero">
       <picture>
         <source
           srcSet="./src/assets/images/image-hero-left.png"
-          media="(min-width: 75rem)"
+          media="(min-width: 78.125rem)"
         />
         <img
           className="hero__img-main"
@@ -22,11 +22,11 @@ export default function Hero() {
       <picture>
         <source
           srcSet="./src/assets/images/image-hero-right.png"
-          media="(min-width: 75rem)"
+          media="(min-width: 78.125rem)"
         />
 
         <img className="hero__img-secondary" src="" alt="" />
       </picture>
-    </div>
+    </aside>
   );
 }

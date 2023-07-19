@@ -5,7 +5,7 @@
   place-items: center;
   gap: get-clamp(3rem, 4.5rem, 23.4375rem, 48rem);
 
-  @include mq(1200px) {
+  @include mq(1250px) {
     width: 110%;
     transform: translateX(-5%);
 
@@ -17,7 +17,7 @@
   &__img-main {
     transform: scale(110%);
 
-    @include mq(1200px) {
+    @include mq(1250px) {
       transform: translateY(-17%);
     }
   }

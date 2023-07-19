@@ -1,4 +1,20 @@
 @use "../../scss/abstracts" as *;
 
 .features {
+  &__item {
+    // list item
+    // add number and vertical line top of container
+  }
+}
+
+.first {
+  &__pic-grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__pic {
+    border-radius: 0.5em;
+  }
 }
