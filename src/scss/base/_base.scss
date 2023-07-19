@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
-body {
+body,
+.main-container {
   overflow-x: hidden;
 }
 

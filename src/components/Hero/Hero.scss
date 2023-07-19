@@ -6,23 +6,23 @@
   gap: get-clamp(3rem, 4.5rem, 23.4375rem, 48rem);
 
   @include mq(1200px) {
-    grid-template-columns: 1fr 34rem 1fr;
-    gap: get-clamp(-2rem, 4.5rem, 75rem, 90rem);
-    gap: 0;
+    width: 110%;
+    transform: translateX(-5%);
+
     place-content: center;
+    grid-template-columns: auto 34rem auto;
+    gap: get-clamp(-2rem, 5rem, 75rem, 90rem);
   }
 
   &__img-main {
     transform: scale(110%);
 
     @include mq(1200px) {
-      position: relative;
-      inset: -10% 10% 0 0;
-      // transform: translate(-5%, -10%);
+      transform: translateY(-17%);
     }
   }
 
   &__img-secondary {
-    // -self: start;
+    transform: translateX(0);
   }
 }
