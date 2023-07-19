@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 
+body {
+  overflow-x: hidden;
+}
+
 .padding {
   padding-inline: $padding-inline-main;
 }

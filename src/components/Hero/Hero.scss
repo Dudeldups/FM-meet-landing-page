@@ -2,16 +2,27 @@
 
 .hero {
   display: grid;
-  place-content: center;
+  place-items: center;
   gap: get-clamp(3rem, 4.5rem, 23.4375rem, 48rem);
-  overflow-x: hidden;
 
-  @include mq(1000px) {
+  @include mq(1200px) {
+    grid-template-columns: 1fr 34rem 1fr;
+    gap: get-clamp(-2rem, 4.5rem, 75rem, 90rem);
+    gap: 0;
+    place-content: center;
   }
 
-  &__img-mobile {
-    @include mq(1000px) {
-      display: none;
+  &__img-main {
+    transform: scale(110%);
+
+    @include mq(1200px) {
+      position: relative;
+      inset: -10% 10% 0 0;
+      // transform: translate(-5%, -10%);
     }
+  }
+
+  &__img-secondary {
+    // -self: start;
   }
 }
