@@ -1,13 +1,41 @@
 @use "../../scss/abstracts" as *;
 
+.line {
+  position: absolute;
+  inset: 0;
+  margin-inline: auto;
+  width: 0.0625rem;
+  height: 5.25rem;
+  background-color: rgba($clr-grey, 0.25);
+  transform: translateY(calc(-1.75rem + -100%));
+}
+
 .features {
   &__item {
-    // list item
-    // add number and vertical line top of container
+    position: relative;
+    margin-top: 8rem;
+
+    &::before {
+      content: "0" counter(list-item);
+      position: absolute;
+      inset: 0 0 auto 0;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      width: 3.5rem;
+      aspect-ratio: 1 / 1;
+      margin-inline: auto;
+      border: 0.0625rem solid rgba($clr-grey, 0.25);
+      border-radius: 50%;
+      background-color: $clr-white;
+      transform: translateY(-50%);
+    }
   }
 }
 
 .first {
+  padding-block: 5.5rem 3rem;
+
   &__pic-grid {
     display: grid;
     gap: 1.5em;
@@ -16,5 +44,41 @@
 
   &__pic {
     border-radius: 0.5em;
+  }
+
+  &__text {
+    margin-top: 3.5rem;
+  }
+
+  &__title {
+    margin-top: 1.5rem;
+  }
+
+  &__desc {
+    margin-top: 2rem;
+  }
+}
+
+.second {
+  position: relative;
+  background: $clr-blue-dark;
+  max-height: 26.875rem;
+
+  &__bg-image {
+    opacity: 0.1;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+  }
+
+  &__desc {
+    margin-block: 1.5rem 2rem;
   }
 }

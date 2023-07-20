@@ -6,6 +6,7 @@ export default function Features() {
   return (
     <ol className="features">
       <li className="features__item first padding">
+        <div className="line"></div>
         <aside className="first__pic-grid">
           <img
             src="./src/assets/images/image-woman-in-videocall.jpg"
@@ -40,18 +41,23 @@ export default function Features() {
       </li>
 
       <li className="features__item second">
-        <picture className="second__bg-image">
+        <div className="line"></div>
+        <picture>
           <source
             srcSet="./src/assets/images/image-footer-desktop.jpg"
             media="(min-width: 62.5rem)"
           />
           <source
             srcSet="./src/assets/images/image-footer-tablet.jpg"
-            media="(min-width: 37.5rem)"
+            media="(min-width: 35rem)"
           />
-          <img src="./src/assets/images/image-footer-mobile.jpg" alt="" />
+          <img
+            className="second__bg-image"
+            src="./src/assets/images/image-footer-mobile.jpg"
+            alt=""
+          />
         </picture>
-        <section className="second__text">
+        <section className="second__text padding">
           <h2 className="second__title">Experience more together</h2>
           <p className="second__desc">
             Stay connected with reliable HD meetings and unlimited one-on-one
