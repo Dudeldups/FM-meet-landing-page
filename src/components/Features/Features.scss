@@ -61,24 +61,35 @@
 
 .second {
   position: relative;
+  z-index: -1;
+  padding-block: 6.25rem 4rem;
   background: $clr-blue-dark;
-  max-height: 26.875rem;
 
-  &__bg-image {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("../../assets/images/image-footer-mobile.jpg") top center /
+      cover no-repeat;
     opacity: 0.1;
-    width: 100%;
-    object-fit: cover;
+
+    @include mq(600px) {
+      background-image: url("../../assets/images/image-footer-tablet.jpg");
+    }
+
+    @include mq(900px) {
+      background-image: url("../../assets/images/image-footer-desktop.jpg");
+    }
   }
 
   &__text {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    align-content: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__desc {
-    margin-block: 1.5rem 2rem;
+    margin-block: 1.5rem;
   }
 }

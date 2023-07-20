@@ -42,21 +42,6 @@ export default function Features() {
 
       <li className="features__item second">
         <div className="line"></div>
-        <picture>
-          <source
-            srcSet="./src/assets/images/image-footer-desktop.jpg"
-            media="(min-width: 62.5rem)"
-          />
-          <source
-            srcSet="./src/assets/images/image-footer-tablet.jpg"
-            media="(min-width: 35rem)"
-          />
-          <img
-            className="second__bg-image"
-            src="./src/assets/images/image-footer-mobile.jpg"
-            alt=""
-          />
-        </picture>
         <section className="second__text padding">
           <h2 className="second__title">Experience more together</h2>
           <p className="second__desc">
