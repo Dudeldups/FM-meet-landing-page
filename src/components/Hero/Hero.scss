@@ -8,10 +8,10 @@
   @include mq(1250px) {
     width: 110%;
     transform: translateX(-5%);
-
     place-content: center;
     grid-template-columns: auto 34rem auto;
     gap: get-clamp(-2rem, 5rem, 75rem, 90rem);
+    margin-bottom: 14.5rem;
   }
 
   &__img-main {

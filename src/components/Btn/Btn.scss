@@ -5,6 +5,7 @@
   padding: 1rem;
   min-width: 8.69rem;
   border-radius: 100rem;
+  transition: background 200ms ease-in, transform 300ms ease-in;
 
   &:has(> span) {
     min-width: 12rem;
@@ -12,9 +13,21 @@
 
   &.blue {
     background-color: $clr-blue-dark;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($clr-blue-dark, 10);
+      transform: scale(1.05);
+    }
   }
 
   &.purple {
     background-color: $clr-purple-dark;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($clr-purple-dark, 10);
+      transform: scale(1.05);
+    }
   }
 }
