@@ -9,22 +9,22 @@ export default function Features() {
         <div className="line"></div>
         <aside className="first__pic-grid">
           <img
-            src="./src/assets/images/image-woman-in-videocall.jpg"
+            src="/assets/images/image-woman-in-videocall.jpg"
             alt="A woman sitting on a desk, smiling at her laptop."
             className="first__pic"
           />
           <img
-            src="./src/assets/images/image-women-videochatting.jpg"
+            src="/assets/images/image-women-videochatting.jpg"
             alt="Three elderly women videochatting over a phone."
             className="first__pic"
           />
           <img
-            src="./src/assets/images/image-men-in-meeting.jpg"
+            src="/assets/images/image-men-in-meeting.jpg"
             alt="A man having a video meeting over his laptop."
             className="first__pic"
           />
           <img
-            src="./src/assets/images/image-man-texting.jpg"
+            src="/assets/images/image-man-texting.jpg"
             alt="A man on a sofa, smiling at his phone."
             className="first__pic"
           />

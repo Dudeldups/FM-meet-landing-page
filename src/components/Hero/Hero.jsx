@@ -7,12 +7,12 @@ export default function Hero() {
     <aside className="hero">
       <picture>
         <source
-          srcSet="./src/assets/images/image-hero-left.png"
+          srcSet="/assets/images/image-hero-left.png"
           media="(min-width: 78.125rem)"
         />
         <img
           className="hero__img-main"
-          src="./src/assets/images/image-hero.png"
+          src="/assets/images/image-hero.png"
           alt="A diverse group of people from different cultures and backgrounds smiling in a global photo collection."
         />
       </picture>
@@ -21,7 +21,7 @@ export default function Hero() {
 
       <picture>
         <source
-          srcSet="./src/assets/images/image-hero-right.png"
+          srcSet="/assets/images/image-hero-right.png"
           media="(min-width: 78.125rem)"
         />
 

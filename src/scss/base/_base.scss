@@ -5,6 +5,10 @@ body,
   overflow-x: hidden;
 }
 
+body {
+  background: $clr-white;
+}
+
 .padding {
   padding-inline: $padding-inline-main;
 }
